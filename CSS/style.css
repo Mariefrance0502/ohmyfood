@@ -7,6 +7,7 @@
     font-family: "Roboto", sans-serif;
      box-sizing: border-box;
  }
+
  a {
    text-decoration: none;
  }
@@ -25,12 +26,13 @@
     align-items: center;
  }
  
- .header_logo img
+ .header_logo 
  {
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    width: 70%;
+    width: 100%;
+    box-shadow: 0 0 10px grey;
     padding-top: 20px;
     padding-bottom: 10px;
  }
@@ -41,9 +43,9 @@
     justify-content: center;
     background-color: #eaeaea;
     padding-top: 10px;
+    margin-top: 5px;
     padding-bottom: 8px;
     gap: 5px;
-    box-shadow: inset 0px 2px 4px gray;
  }
  
  .header_texteintroduction
@@ -54,7 +56,7 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 18px;
-    background-color: #f5f1f1;
+    background-color: #f2f2f2;
  }
  
  .header_texteintroduction h1 
@@ -70,6 +72,7 @@
    text-align: center;
    margin-top: 30px ;
    margin-bottom: 30px ;
+   font-weight: 100;
  }
  
  button 
@@ -115,9 +118,9 @@
 {
     display: flex;
     flex-direction: row;
-    background-color: #f5f1f1;
+    background-color: #f2f2f2;
     padding: 20px  25px;
-    width: 70%;
+    width: 100%;
     gap: 15px;
     border-radius: 30px;
     font-weight: bold;
@@ -151,7 +154,7 @@
    flex-direction: column;
    padding-top: 10px;
    gap: 5px;
-   background-color: #f5f1f1;
+   background-color: #f2f2f2;
 }
 
 .restaurant h2 
@@ -194,7 +197,6 @@
    padding-top: 5px;
    padding-left: 10px;
    border-radius: 0px 0px 15px 15px;
-   gap: 15px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -239,11 +241,29 @@
     padding-right: 30px;
 }
 
+.texte 
+{
+
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
 
 .texte p:nth-of-type(2)
 {
     font-weight: 100;
 }
+
+.icone_restaurant i
+{
+   padding-top: 10px;
+}
+
+.icone_restaurant i:hover
+{
+   background-color: linear-gradient( #FF79DA, #9356DC);
+}
+
 
 footer 
 {

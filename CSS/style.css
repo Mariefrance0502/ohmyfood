@@ -1,0 +1,298 @@
+
+    @import url('https://fonts.googleapis.com/css2? family= Raleway:wght@100;400;600 & family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700; 0,900;1,100;1,300;1,500;1,700;1,900 & display=swap');
+ *
+ {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+ }
+ 
+ * 
+ {
+     box-sizing: border-box;
+ }
+ 
+ .marge {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 40px; 
+ }
+ 
+ header 
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .header_logo img
+ {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+ }
+ 
+ .header_localisation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    gap: 5px;
+    box-shadow: inset 0px 2px 4px gray;
+ }
+ 
+ .header_texteintroduction
+ {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    background-color: #f5f1f1;
+ }
+ 
+ .header_texteintroduction h1 
+ {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+
+ }
+ 
+ .header_texteintroduction p
+ {
+   text-align: center;
+   margin-top: 30px ;
+   margin-bottom: 30px ;
+ }
+ 
+ button 
+ {
+    width: 40%;
+    height: 60px;
+    margin-bottom: 30px;
+    color: white;
+    align-items: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow:  5px 5px 5px 5px #f2f2f2;
+    background: linear-gradient( #FF79DA, #9356DC);
+    background-color: #f5f1f1;
+ }
+ 
+ .fonctionnement 
+ {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     gap: 15px;
+ }
+
+.fonctionnement h2
+{
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+
+#boutton_fontionnement
+{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   margin-left: 10px;
+}
+
+
+
+.fontionnement_button
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f1f1;
+    padding: 20px  25px;
+    width: 70%;
+    gap: 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    box-shadow:  5px 5px 5px 5px #f5f1f1;
+    margin-bottom: 30px;
+}
+
+.fontionnement_button:hover
+{
+   background-color: #f5edff;
+   cursor: pointer;
+}
+
+.numero_button
+{
+    border: 1px solid #9356DC;
+    background-color: #9356DC;
+    border-radius: 100%;
+    width: 20px;
+    text-align: center;
+    color: white;
+    margin-left: -30px;
+}
+
+.restaurant 
+{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   flex-direction: column;
+   padding-top: 10px;
+   gap: 5px;
+   background-color: #f5f1f1;
+}
+
+.restaurant h2 
+
+{
+   padding-top: 18px;
+   padding-bottom: 20px;
+}
+
+.cards 
+{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.cardrestaurant
+{
+   width: 100%;
+   height: 270px;
+   border-radius: 15px 15px 15px 15px;
+   border: 0px solid black;
+   background-color: white;
+   box-shadow:  10px 10px 10px 10px #f5f1f1;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.cardrestaurant:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+.texterestaurant
+{
+   background-color: white;
+   color: black;
+   height: 50px;
+   padding-top: 5px;
+   padding-left: 10px;
+   border-radius: 0px 0px 15px 15px;
+   gap: 15px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+
+.imagerestaurant
+{
+    position: relative;
+}
+
+.imagerestaurant img 
+{
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ border-radius: 14px 14px 0px 0px;
+}
+
+
+.new 
+{
+ position: absolute;
+ top: 15px;
+ right: 15px;
+ border: 0.5px solid #1f991f;
+ background-color: #99e2d0;
+ color: #1f997b;
+ width: 80px;
+ padding-top: 4px;
+ height: 30px;
+ text-align: center;
+}
+
+.textegras
+{
+ font-weight: bold;
+}
+
+.icone_restaurant
+{
+    padding-right: 30px;
+}
+
+
+.texte p:nth-of-type(2)
+{
+    font-weight: 100;
+}
+
+footer 
+{
+   background-color: #353535;
+   gap: 15px; 
+}
+
+footer p
+{
+   display: flex;
+   flex-direction: column;
+   color: white;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-size: 18px;
+}
+
+.footer_titre
+{
+width: 35%;
+padding-bottom: 10px;
+font-family: "shrikhand";
+font-size: 30px;
+font-style: italic;
+font-weight: bold;
+}
+
+
+.liensfooter1
+{
+   display: flex; 
+   flex-direction: row;
+   gap: 20px;
+   margin-top: 10px;
+}
+
+.liensfooter2
+{
+   display: flex; 
+   flex-direction: row;
+   gap: 13px;
+   margin-top: 10px;
+}
+
+/*
+
+<i class="fa-thin fa-heart"></i> coeur 
+<i class="fa-sharp fa-solid fa-arrow-left"></i> flèche 
+<i class="fa-solid fa-circle-check"></i> validé
+*/
+

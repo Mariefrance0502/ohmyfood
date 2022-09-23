@@ -1,11 +1,12 @@
 
     @import url('https://fonts.googleapis.com/css2? family= Raleway:wght@100;400;600 & family= Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700; 0,900;1,100;1,300;1,500;1,700;1,900 & display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
  *
  {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-     box-sizing: border-box;
+    box-sizing: border-box;
  }
 
  a {
@@ -18,7 +19,8 @@
     padding-top: 20px;
     padding-bottom: 40px; 
  }
- 
+
+
  header 
  {
     display: flex;
@@ -37,9 +39,6 @@
     padding-top: 20px;
     padding-bottom: 10px;
  }
-
-
- 
 
 
  .header_localisation {
@@ -79,8 +78,9 @@
    margin-bottom: 30px ;
    font-weight: 100;
  }
- 
- button 
+
+
+button 
  {
     width: 40%;
     height: 60px;
@@ -88,13 +88,22 @@
     color: white;
     align-items: center;
     font-size: 15px;
+    padding: 10px 20px;
     border: none;
     border-radius: 30px 30px 30px 30px;
-    box-shadow:  5px 5px 5px 5px #f2f2f2;
+    box-shadow: 1px 1px 1px 1px gray;
     background: linear-gradient( #FF79DA, #9356DC);
     background-color: #f2f2f2;
  }
- 
+
+ button:hover
+ {
+   cursor: pointer;
+   box-shadow: 0px 2px 10px gray;
+   background-color: #f5edff;
+ }
+
+
  .fonctionnement 
  {
      display: flex;
@@ -116,7 +125,6 @@
    gap: 5px;
    margin-left: 10px;
 }
-
 
 
 .fontionnement_button
@@ -151,6 +159,7 @@
     margin-left: -30px;
 }
 
+
 .restaurant 
 {
    display: flex;
@@ -183,14 +192,14 @@
    border-radius: 15px 15px 15px 15px;
    border: 0px solid black;
    background-color: white;
-   box-shadow:  10px 10px 10px 10px #f2f2f2;
+   box-shadow:  15px 15px 15px 15px #f2f2f2;
    margin-top: 20px;
    margin-bottom: 20px;
 }
 
 .cardrestaurant:hover {
     cursor: pointer;
-    transform: scale(1.03);
+    box-shadow: 2px 2px 2px 2px #d9d9d9;
 }
 
 
@@ -236,16 +245,6 @@
  text-align: center;
 }
 
-.textegras
-{
- font-weight: bold;
- margin-bottom: 5px;
-}
-
-.icone_restaurant
-{
-    padding-right: 30px;
-}
 
 .texte 
 {
@@ -254,22 +253,32 @@
    flex-direction: column;
 }
 
+.textegras
+{
+ font-weight: bold;
+ margin-bottom: 5px;
+}
+
 .texte p:nth-of-type(2)
 {
     font-weight: 100;
 }
 
-.icone_restaurant i
-{
-   padding-top: 10px;
+
+.fa-heart {
+   font-size: 30px;
+   position: relative;
+   right: 30px;
+   background: linear-gradient( #FF79DA, #9356DC);
+   background-repeat: no-repeat;
+   transition: 0.55s ease-in-out;
+   background-size: 60% 0px;
+   background-position: 60% 80%;
 }
-
-.icone_restaurant i:hover
-{
-   background-color: linear-gradient( #FF79DA, #9356DC);
-}
-
-
+ 
+ .fa-heart:hover{
+   background-size: 100% 100%;
+ }
 footer 
 {
    background-color: #353535;
@@ -313,10 +322,6 @@ font-weight: bold;
    margin-top: 10px;
 }
 
-/*
+ 
 
-<i class="fa-thin fa-heart"></i> coeur 
-<i class="fa-sharp fa-solid fa-arrow-left"></i> flèche 
-<i class="fa-solid fa-circle-check"></i> validé
-*/
 

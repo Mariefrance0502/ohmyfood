@@ -1,70 +1,31 @@
-@media screen and (max-width: 1240px) {
+
+@media screen and (min-width: 992px) {
 
 
-button 
-{
-   width: 30%;
-}
 
 #boutton_fontionnement
 {
-   display: flex;
-   flex-direction: row;
-   gap: 30px;
-}
-
-.fontionnement_button
-{
-    display: flex;
-    padding: 8px  22px;
-    width: 70%;
-    gap: 10px;
-    align-items: center;
+flex-direction: row;
+gap: 20px;
+     
 }
 
 .cards 
 {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
+ flex-direction: row;  
+ flex-wrap: wrap;
+ justify-content: space-between;
 }
+
 
 .cardrestaurant
 {
-   width: 48%;
-   height: 350px;
+   width: 45%;
 }
 
 
-.texterestaurant
-{
-   height: 30px;
-   padding-top: 0px;
-   margin-bottom: 0px;
-   gap: 15px;
-}
 
 }
-
-
-/* Responsive tablette */
-
-@media screen and (min-width: 768px) {
-
-
-  .cards 
-{
-   flex-direction: row;
-}
-  
-.cardrestaurant
-{
-     width: 47%;
-     height: 260px;
-}
-  
-}
-
 
 
 

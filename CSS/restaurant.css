@@ -39,17 +39,27 @@
    padding-top: 20px;
    padding-bottom: 10px;
 }
-
-.fa-heart {
-   color:black;
-   background-color: linear-gradient( #FF79DA, #9356DC);
-}   
-
-
+  
 .imageintroduction img
 {
 width: 100%;
 }
+
+.fa-heart {
+   font-size: 30px;
+   position: relative;
+   right: 30px;
+   background: linear-gradient( #FF79DA, #9356DC);
+   background-repeat: no-repeat;
+   transition: 0.55s ease-in-out;
+   background-size: 60% 0px;
+   background-position: 60% 80%;
+}
+ 
+ .fa-heart:hover{
+   background-size: 100% 100%;
+ }
+
 
 section
 {
@@ -77,11 +87,6 @@ section h1
    justify-content: space-between;
 }
 
-h2
-{
-   padding-bottom: 6px;
-}
-
 section h2 
 {
    margin-bottom: 30px;
@@ -91,21 +96,21 @@ section h2
    font-weight: 100;
 }
 
-
-.carre_entrée_plat_dessert
+h2
 {
-   background-color: #f2f2f2; 
-   animation-delay: 6s;
-   
+   padding-bottom: 6px;
 }
-
 
 #bloc_entrée_plat_dessert 
 {
    display: flex;
    flex-direction: column;
 }
-
+.carre_entrée_plat_dessert
+{
+   background-color: #f2f2f2; 
+   animation-delay: 6s;
+}
 
 .entrée_plat_dessert 
 {
@@ -121,7 +126,6 @@ section h2
    box-shadow: 10px 10px 10px 10px #F2F2F2; 
 }
 
-
 .icone--menue i {
    display: flex;
    position : relative; 
@@ -133,42 +137,13 @@ section h2
    padding-top: 25px;
 }
 
-
 .icone--menue :hover {
    transform: translate(60%, 20%);
    transition : 0.35s ease-in-out;
    cursor: pointer;
 }
 
-
- .bloc-couleur {
-   width:150px;
-   height:150px;
-   border:0px solid grey;
-   position:relative;
-   display:inline-block;
-   overflow:hidden;
-   text-align:center;
-   vertical-align:middle;
-   line-height:150px; 
- }
- 
-
- .couleur-remplissage:after{
-   content:'';
-   display:block;
-   position:absolute;
-   bottom:0;
-   top:0;
-   left:0;
-   right:0;
-   z-index:1;
-   background-color: #99E2D0;
-  
- }
-
-
- .box-icone {
+.box-icone {
    width: 72px;
    border-radius: 0px 17px 17px 0px;
    height: 80px;
@@ -186,9 +161,7 @@ section h2
 }
 
 .entrée_plat_dessert p {
-
   text-align: center;
-
 }
 
 
@@ -203,7 +176,6 @@ section h2
    font-weight: 100;
    display: flex;
    justify-content: space-between;
-  
 }
 
 .texte_prix p:nth-of-type(2)
@@ -212,10 +184,8 @@ section h2
     padding-right: 15px;
 }
 
-
 button 
 {
- 
    width: 50%;
    height: 60px;
    margin: auto;
@@ -270,7 +240,7 @@ button:hover
  font-weight: bold;
  }
  
- 
+
  .liensfooter1
  {
     display: flex; 
@@ -288,19 +258,5 @@ button:hover
  }
  
 
- .fa-heart {
-   font-size: 30px;
-   position: relative;
-   right: 30px;
-   background: linear-gradient( #FF79DA, #9356DC);
-   background-repeat: no-repeat;
-   transition: 0.55s ease-in-out;
-   background-size: 60% 0px;
-   background-position: 60% 80%;
-}
- 
- .fa-heart:hover{
-   background-size: 100% 100%;
- }
 
  

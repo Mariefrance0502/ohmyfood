@@ -5,9 +5,9 @@
  {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
-    
+    font-family: "Roboto", sans-serif; 
  }
+
  a {
    text-decoration: none;
 
@@ -18,7 +18,7 @@
     margin-right: 5%;
     padding-top: 20px;
     padding-bottom: 40px;
- }
+}
  
 
 
@@ -47,7 +47,7 @@ width: 100%;
 
 .fa-heart {
    font-size: 30px;
-   position: relative;
+   position: absolute;
    right: 30px;
    background: linear-gradient( #FF79DA, #9356DC);
    background-repeat: no-repeat;
@@ -55,10 +55,6 @@ width: 100%;
    background-size: 60% 0px;
    background-position: 60% 80%;
 }
- 
- .fa-heart:hover{
-   background-size: 100% 100%;
- }
 
 
 section
@@ -101,58 +97,22 @@ h2
    padding-bottom: 6px;
 }
 
+
+
+
 #bloc_entrée_plat_dessert 
 {
    display: flex;
    flex-direction: column;
 }
-.carre_entrée_plat_dessert
-{
-   background-color: #f2f2f2; 
-   animation-delay: 6s;
-}
 
-.entrée_plat_dessert 
-{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   background-color: white;
-   border: 1px solid #f2f2f2;
-   border-radius: 20px 20px 20px 20px;
-   height: 80px;
-   margin-bottom: 10px;
-   margin-top: 10px;
-   box-shadow: 10px 10px 10px 10px #F2F2F2; 
-}
-
-.icone--menue i {
-   display: flex;
-   position : relative; 
-   border-radius: 50%;
-   width: 1.35rem;
-   font-size: 30px;
-   color: white;
-   margin-left: 19px;
-   padding-top: 25px;
-}
-
-.icone--menue :hover {
-   transform: translate(60%, 20%);
-   transition : 0.35s ease-in-out;
-   cursor: pointer;
-}
-
-.box-icone {
-   width: 72px;
-   border-radius: 0px 17px 17px 0px;
-   height: 80px;
-   background-color: #99e2d0;
-   
+.entrée_plat_dessert p {
+   text-align: center;
 }
 
 .text--menue {
    width: 100%;
+   position: relative;
       display: flex;
       flex-direction: column;
       margin-top: 15px;
@@ -160,29 +120,74 @@ h2
       padding-left: 20px;
 }
 
-.entrée_plat_dessert p {
-  text-align: center;
-}
-
-
-.textegras
-{
- font-weight: bold;
- margin-bottom: 5px;
-}
-
-.texte_prix
-{
-   font-weight: 100;
-   display: flex;
-   justify-content: space-between;
-}
-
 .texte_prix p:nth-of-type(2)
 {
     font-weight: bold;
     padding-right: 15px;
 }
+
+
+.entrée_plat_dessert:hover .texte_prix p:nth-of-type(2) {
+   position: absolute;
+   right: 62px;
+}
+
+
+
+.icone--menue {
+   background-color: #99e2d0;
+   width: 100px;
+   position: relative;
+   justify-content: center;
+   display: grid;
+   place-items: center;
+   background-color: #99e2d0;
+   border-radius: 0 20px 20px 0;
+}
+
+
+ 
+
+
+.icone--menue i {
+   display: flex;
+   width: 1.35rem;
+   align-items: center;
+   font-size: 30px;
+   color: white;
+   align-items: center;
+}
+
+
+
+
+.icone--menue:hover
+{
+   animation: alternate-reverse;
+   animation-delay: 3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 button 
 {
@@ -257,6 +262,276 @@ button:hover
     margin-top: 10px;
  }
  
+.fa-heart {
+   position: relative;
+   font-size: 3 rem;
+   background-color: transparent;
+   border: none;
+   margin-right: 10px;
+   padding: 0;
+   margin-bottom: 30px;
+ }
+
+.fa-heart:hover{
+   animation: heart 1s 0s forwards;
+}
+
+@keyframes heart {
+0% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+10% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+20% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+30% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+40% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+50% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+60% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+70% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+80% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+90% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+
+100% {
+ background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+ -webkit-background-clip: text;
+ color: transparent;
+ font-weight: bold;
+}
+}
 
 
+
+
+
+
+
+
+
+
+/*
+ .plats__order {
+   text-transform: uppercase;
+   padding-bottom: 0px;
+   font-size: 20px;
+   margin: 0px 0px 2px 0px;
+   padding-left: 10px;
+   font-weight: 400;
+ }
  
+
+ .plats {
+   height: 350px;
+ }
+ .plats__2 {
+   height: 420px;
+ }
+ */
+
+
+ .entrée_plat_dessert {
+   display: flex;
+   height: 80px;
+   justify-content: space-between;
+   background-color: white;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   animation: fade-in-bottom 2s both;
+   border: 0px solid;
+   border-radius: 20px;
+   box-shadow: 3px 3px 10px #d8d8d8;
+   overflow: hidden;
+   font-size: 14px;
+   padding: 0px 15px;
+   line-height: 10px;
+   -webkit-animation: cardup 1.5s;
+           animation: cardup 1.5s;
+ }
+
+ .plats__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+}
+
+ .plats__description, texte_plat {
+   padding: 10px;
+   margin: 0;
+   width: 265px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   transition: width 1s;
+}
+
+.texte_plat
+{
+   font-weight: 100;
+   display: flex;
+   justify-content: space-between; 
+}
+
+.plats__validation {
+   width: 140px;
+   height: auto;
+   display: flex;
+   align-items: end;
+   justify-content: center;
+   margin-right: -110px;
+   transition: margin-right 1s;
+ }
+
+ .prix_plat {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   margin-right: 30px;
+   padding-bottom: 20px;
+   font-weight: 800;
+ }
+
+ .plats__check {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   width: 90px;
+   font-size: 25px;
+   background-color: #99E2D0;
+   height: 100%;
+ }
+ 
+ .fa-circle-check {
+   transition: all 0.5s ease-in 0.1s;
+ }
+ 
+ .entrée_plat_dessert:hover {
+   box-shadow: 3px 3px 10px rgb(139, 137, 137);
+ }
+ .entrée_plat_dessert:hover .fa-circle-check {
+   transform: rotate(360deg);
+ }
+ .entrée_plat_dessert:hover .plats__validation {
+   margin-right: -15px;
+ }
+ 
+ @-webkit-keyframes cardup {
+   0% {
+     margin-top: 30px;
+     opacity: 0;
+   }
+   100% {
+     margin-top: 0px;
+     opacity: 1;
+   }
+ }
+ 
+ @keyframes cardup {
+   0% {
+     margin-top: 30px;
+     opacity: 0;
+   }
+   100% {
+     margin-top: 0px;
+     opacity: 1;
+   }
+ }
+ .order1 {
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+   -webkit-animation-delay: 0.4s;
+           animation-delay: 0.4s;
+ }
+ 
+ .order2 {
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+   -webkit-animation-delay: 0.8s;
+           animation-delay: 0.8s;
+ }
+ 
+ .order3 {
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+   -webkit-animation-delay: 1.2s;
+           animation-delay: 1.2s;
+ }
+ 
+ .order4 {
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+   -webkit-animation-delay: 1.6s;
+           animation-delay: 1.6s;
+ }
+ 
+ .commande--btn {
+   border-radius: 25px;
+   background: linear-gradient(#FF79DA, #9356DC);
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   box-shadow: 0px 2px 10px rgb(133, 132, 132);
+   padding: 10px 20px;
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 45px;
+   margin: auto;
+ }
+
+

@@ -16,7 +16,7 @@ padding-bottom: 40px;
 }
 
 
-#bloc_entrée_plat_dessert
+.bloc_entrée_plat_dessert
 {
     flex-direction: row;
     justify-content: space-around;

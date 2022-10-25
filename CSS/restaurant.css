@@ -19,9 +19,8 @@
     padding-top: 20px;
     padding-bottom: 40px;
 }
+
  
-
-
 .header_logo_icone
 {
    display: flex;
@@ -43,19 +42,9 @@
 .imageintroduction img
 {
 width: 100%;
+height: 300px;
+object-fit: cover;
 }
-
-.fa-heart {
-   font-size: 30px;
-   position: absolute;
-   right: 30px;
-   background: linear-gradient( #FF79DA, #9356DC);
-   background-repeat: no-repeat;
-   transition: 0.55s ease-in-out;
-   background-size: 60% 0px;
-   background-position: 60% 80%;
-}
-
 
 section
 {
@@ -83,111 +72,272 @@ section h1
    justify-content: space-between;
 }
 
-section h2 
+
+.fa-heart {
+  position: relative;
+  font-size: 3 rem;
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.fa-heart:hover{
+  animation: heart 1s 0s forwards;
+}
+
+@keyframes heart {
+0% {
+background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+-webkit-background-clip: text;
+color: transparent;
+font-weight: bold;
+}
+
+10% {
+background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+-webkit-background-clip: text;
+color: transparent;
+font-weight: bold;
+}
+
+20% {
+background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+-webkit-background-clip: text;
+color: transparent;
+font-weight: bold;
+}
+
+30% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+ }
+ 
+ 40% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+ }
+ 
+ 50% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+ }
+ 
+ 60% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+ }
+ 
+ 70% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+ }
+ 
+ 80% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+ }
+ 
+ 90% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+ }
+ 
+ 100% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+ }
+}
+
+.bloc_entrée_plat_dessert 
+{
+   display: flex;
+   flex-direction: column;
+   margin-top: -50px;
+}
+
+
+h2 
 {
    margin-bottom: 30px;
    margin-top: 30px;
    border-bottom: 5px solid #99e2d0;
    width: 60px;
    font-weight: 100;
-}
-
-h2
-{
    padding-bottom: 6px;
 }
 
+.entree_plat_dessert {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  animation: backwards 2s both;
+  border: 0px solid;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #d8d8d8;
+  overflow: hidden;
+  font-size: 14px;
+  padding: 0px 15px;
+  line-height: 10px;
+  -webkit-animation: cardup 1.5s;
+          animation: cardup 1.5s;
+}
 
+@-webkit-keyframes cardup {
+  0% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
 
+@keyframes cardup {
+  0% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+ 
+.affiche1 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
 
-#bloc_entrée_plat_dessert 
-{
-   display: flex;
-   flex-direction: column;
+.affiche2 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.affiche3 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.affiche4 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
 }
 
 .entrée_plat_dessert p {
-   text-align: center;
+  text-align: center;
+}
+.entree_plat_dessert:hover {
+  box-shadow: 3px 3px 10px rgb(139, 137, 137);
 }
 
-.text--menue {
-   width: 100%;
-   position: relative;
-      display: flex;
-      flex-direction: column;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      padding-left: 20px;
+.entree_plat_dessert:hover .texte_prix p:nth-of-type(2) {
+  position: absolute;
+  right: 62px;
 }
-
-.texte_prix p:nth-of-type(2)
-{
-    font-weight: bold;
-    padding-right: 15px;
-}
-
-
-.entrée_plat_dessert:hover .texte_prix p:nth-of-type(2) {
-   position: absolute;
-   right: 62px;
-}
-
-
-
-.icone--menue {
-   background-color: #99e2d0;
-   width: 100px;
-   position: relative;
-   justify-content: center;
-   display: grid;
-   place-items: center;
-   background-color: #99e2d0;
-   border-radius: 0 20px 20px 0;
-}
-
-
  
 
-
-.icone--menue i {
-   display: flex;
-   width: 1.35rem;
-   align-items: center;
-   font-size: 30px;
-   color: white;
-   align-items: center;
+.plats__description {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
 }
 
-
-
-
-.icone--menue:hover
+.texte_plat
 {
-   animation: alternate-reverse;
-   animation-delay: 3s;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.plats__description, texte_plat {
+  padding: 10px;
+  margin: 0;
+  width: 265px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: width 1s;
+}
+
+.plats__validation {
+  width: 140px;
+  height: auto;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-right: -110px;
+  transition: margin-right 1s;
+}
+
+.prix_plat {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 30px;
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+
+.plats__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 90px;
+  font-size: 25px;
+  background-color: #99E2D0;
+  height: 100%;
+}
+
+.entree_plat_dessert:hover .fa-circle-check {
+  transform: rotate(360deg);
+}
+.entree_plat_dessert:hover .plats__validation {
+  margin-right: -15px;
 }
 
 
+.fa-circle-check {
+  transition: all 0.5s ease-in 0.1s;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bouton_commande
+{
+   display: flex; 
+   margin-top: 40px;
+   background-color: #f2f2f2;
+}
 
 button 
 {
@@ -204,14 +354,6 @@ button
    background: linear-gradient( #FF79DA, #9356DC);
 }
 
-
-.bouton_commande
-{
-   display: flex; 
-   margin-top: 40px;
-   background-color: #f2f2f2;
-}
-
 button:hover
  {
    cursor: pointer;
@@ -219,6 +361,13 @@ button:hover
    background-color: #f5edff;
  }
  
+
+
+
+
+
+
+
  footer 
  {
     background-color: #353535;
@@ -262,276 +411,8 @@ button:hover
     margin-top: 10px;
  }
  
-.fa-heart {
-   position: relative;
-   font-size: 3 rem;
-   background-color: transparent;
-   border: none;
-   margin-right: 10px;
-   padding: 0;
-   margin-bottom: 30px;
- }
-
-.fa-heart:hover{
-   animation: heart 1s 0s forwards;
-}
-
-@keyframes heart {
-0% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-10% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-20% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-30% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-40% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-50% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-60% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-70% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-80% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-90% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-
-100% {
- background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
- -webkit-background-clip: text;
- color: transparent;
- font-weight: bold;
-}
-}
-
-
-
-
-
-
-
-
-
-
-/*
- .plats__order {
-   text-transform: uppercase;
-   padding-bottom: 0px;
-   font-size: 20px;
-   margin: 0px 0px 2px 0px;
-   padding-left: 10px;
-   font-weight: 400;
- }
  
 
- .plats {
-   height: 350px;
- }
- .plats__2 {
-   height: 420px;
- }
- */
-
-
- .entrée_plat_dessert {
-   display: flex;
-   height: 80px;
-   justify-content: space-between;
-   background-color: white;
-   margin-bottom: 10px;
-   margin-top: 10px;
-   animation: fade-in-bottom 2s both;
-   border: 0px solid;
-   border-radius: 20px;
-   box-shadow: 3px 3px 10px #d8d8d8;
-   overflow: hidden;
-   font-size: 14px;
-   padding: 0px 15px;
-   line-height: 10px;
-   -webkit-animation: cardup 1.5s;
-           animation: cardup 1.5s;
- }
-
- .plats__description {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-}
-
- .plats__description, texte_plat {
-   padding: 10px;
-   margin: 0;
-   width: 265px;
-   overflow: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
-   transition: width 1s;
-}
-
-.texte_plat
-{
-   font-weight: 100;
-   display: flex;
-   justify-content: space-between; 
-}
-
-.plats__validation {
-   width: 140px;
-   height: auto;
-   display: flex;
-   align-items: end;
-   justify-content: center;
-   margin-right: -110px;
-   transition: margin-right 1s;
- }
-
- .prix_plat {
-   display: flex;
-   align-items: flex-end;
-   justify-content: center;
-   margin-right: 30px;
-   padding-bottom: 20px;
-   font-weight: 800;
- }
-
- .plats__check {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   width: 90px;
-   font-size: 25px;
-   background-color: #99E2D0;
-   height: 100%;
- }
  
- .fa-circle-check {
-   transition: all 0.5s ease-in 0.1s;
- }
- 
- .entrée_plat_dessert:hover {
-   box-shadow: 3px 3px 10px rgb(139, 137, 137);
- }
- .entrée_plat_dessert:hover .fa-circle-check {
-   transform: rotate(360deg);
- }
- .entrée_plat_dessert:hover .plats__validation {
-   margin-right: -15px;
- }
- 
- @-webkit-keyframes cardup {
-   0% {
-     margin-top: 30px;
-     opacity: 0;
-   }
-   100% {
-     margin-top: 0px;
-     opacity: 1;
-   }
- }
- 
- @keyframes cardup {
-   0% {
-     margin-top: 30px;
-     opacity: 0;
-   }
-   100% {
-     margin-top: 0px;
-     opacity: 1;
-   }
- }
- .order1 {
-   -webkit-animation-fill-mode: backwards;
-           animation-fill-mode: backwards;
-   -webkit-animation-delay: 0.4s;
-           animation-delay: 0.4s;
- }
- 
- .order2 {
-   -webkit-animation-fill-mode: backwards;
-           animation-fill-mode: backwards;
-   -webkit-animation-delay: 0.8s;
-           animation-delay: 0.8s;
- }
- 
- .order3 {
-   -webkit-animation-fill-mode: backwards;
-           animation-fill-mode: backwards;
-   -webkit-animation-delay: 1.2s;
-           animation-delay: 1.2s;
- }
- 
- .order4 {
-   -webkit-animation-fill-mode: backwards;
-           animation-fill-mode: backwards;
-   -webkit-animation-delay: 1.6s;
-           animation-delay: 1.6s;
- }
- 
- .commande--btn {
-   border-radius: 25px;
-   background: linear-gradient(#FF79DA, #9356DC);
-   color: rgb(255, 255, 255);
-   text-decoration: none;
-   box-shadow: 0px 2px 10px rgb(133, 132, 132);
-   padding: 10px 20px;
-   width: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 45px;
-   margin: auto;
- }
 
-
+ 

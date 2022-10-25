@@ -11,18 +11,78 @@
 
 
 
- a {
-   text-decoration: none;
+ .loading {
+   background-color: #f2f2f2;
+   opacity: 0.9;
+   height: 100%;
+   position: fixed;
+   inset: 0;
+   z-index: 1;
+   animation: time 100ms forwards;
+   animation-delay: 1s;
+   transform-origin: middle;
  }
  
- .marge {
+ 
+ .loader {
+   border-top: 7px solid linear-gradient( #FF79DA, #9356DC, #99E2D0);
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+   animation: spin 1s ease-in-out infinite forwards;
+   margin: auto;
+   position: absolute;
+   inset: 0;
+ }
+ 
+ 
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+     border-top: 7px solid #9356DC;
+     border-left: 7px solid #FF79DA;
+     border-bottom: 7px solid #99E2D0;
+ 
+   }
+   25% {
+     transform: rotate(90deg);
+     border-top: 7px solid #FF79DA;
+     border-left: 7px solid #99E2D0;
+     border-right: 7px solid #9356DC;
+   }
+ 
+   50% {
+      transform: rotate(180deg);
+      border-top: 7px solid #99E2D0;
+      border-bottom: 7px solid #9356DC;
+      border-right: 7px solid #FF79DA; 
+      }
+ 
+   
+   100% {
+         transform: rotate(360deg);
+         border-top: 7px solid #9356DC;
+         border-left: 7px solid #FF79DA;
+         border-bottom: 7px solid #99E2D0;
+       }
+ 
+ }
+ 
+ @keyframes time {
+   0% {
+     transform: scale(1);
+   }
+   100% {
+     transform: scale(0);
+   }
+ }
+ 
+.marge {
     margin-left: 5%;
     margin-right: 5%;
     padding-top: 20px;
     padding-bottom: 40px; 
- }
-
-
+}
 
  header 
  {
@@ -84,7 +144,7 @@
 
 
 button 
- {
+{
     width: 40%;
     height: 60px;
     margin-bottom: 30px;
@@ -205,20 +265,10 @@ button
     box-shadow: 2px 2px 2px 2px #d9d9d9;
 }
 
-
-.texterestaurant
+a
 {
-   background-color: white;
-   color: black;
-   height: 50px;
-   padding-top: 5px;
-   padding-left: 10px;
-   border-radius: 0px 0px 15px 15px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+   text-decoration: none;
 }
-
 
 .imagerestaurant
 {
@@ -232,7 +282,6 @@ button
  object-fit: cover;
  border-radius: 14px 14px 0px 0px;
 }
-
 
 .new 
 {
@@ -248,10 +297,21 @@ button
  text-align: center;
 }
 
+.texterestaurant
+{
+   background-color: white;
+   color: black;
+   height: 50px;
+   padding-top: 5px;
+   padding-left: 10px;
+   border-radius: 0px 0px 15px 15px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
 
 .texte 
 {
-
    display: flex;
    flex-direction: column;
 }
@@ -268,7 +328,6 @@ button
 }
 
 
-
 .fa-heart {
    position: relative;
    font-size: 1.5rem;
@@ -281,9 +340,7 @@ button
  }
 
 .fa-heart:hover{
-
    animation: heart 1s 0s forwards;
- 
 }
 
 @keyframes heart {
@@ -383,7 +440,7 @@ font-weight: bold;
 }
 
 
-.liensfooter1
+.liens_footer1
 {
    display: flex; 
    flex-direction: row;
@@ -391,7 +448,7 @@ font-weight: bold;
    margin-top: 10px;
 }
 
-.liensfooter2
+.liens_footer2
 {
    display: flex; 
    flex-direction: row;
@@ -400,3 +457,4 @@ font-weight: bold;
 }
 
 
+ 

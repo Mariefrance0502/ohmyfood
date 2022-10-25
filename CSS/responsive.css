@@ -1,13 +1,9 @@
-
 @media screen and (min-width: 992px) {
-
-
 
 #boutton_fontionnement
 {
 flex-direction: row;
 gap: 20px;
-     
 }
 
 .cards 
@@ -17,13 +13,10 @@ gap: 20px;
  justify-content: space-between;
 }
 
-
 .cardrestaurant
 {
    width: 45%;
 }
-
-
 
 }
 

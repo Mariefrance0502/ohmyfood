@@ -166,7 +166,7 @@ font-weight: bold;
  }
 }
 
-.bloc_entrée_plat_dessert 
+#bloc_entrée_plat_dessert 
 {
    display: flex;
    flex-direction: column;

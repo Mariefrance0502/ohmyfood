@@ -1,6 +1,5 @@
-@media screen and (min-width: 768px) {
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+@media screen and (min-width: 768px) {
 .marge {
 margin-left: 2%;
 margin-right: 2%;
@@ -18,6 +17,7 @@ padding-bottom: 40px;
 
 .bloc_entrée_plat_dessert
 {
+   display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 10px;
@@ -35,11 +35,8 @@ padding-bottom: 40px;
     object-fit: cover;
 }
 
-button 
-{
- 
-   width: 30%;
-   
+button {
+    width: 30%;
 }
 
 }

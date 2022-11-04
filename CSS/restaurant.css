@@ -425,6 +425,12 @@ button:hover
     margin-top: 10px;
  }
  
+ .liens_contact
+ {
+  text-decoration: none;
+  color: white;
+  line-height: 20px;
+ }
  
 
  

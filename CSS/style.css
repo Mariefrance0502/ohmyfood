@@ -457,3 +457,9 @@ font-weight: bold;
 
 
  
+.liens_contact
+{
+ text-decoration: none;
+ color: white;
+ line-height: 20px;
+}

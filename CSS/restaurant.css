@@ -29,6 +29,19 @@
   
 }
 
+.header_logo_icone i
+{
+  text-decoration: none;
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  
+}
+
+
 .header_logo_icone img 
  {
    display: flex;
@@ -45,6 +58,7 @@ width: 100%;
 height: 300px;
 object-fit: cover;
 }
+
 
 section
 {
@@ -253,7 +267,7 @@ h2
           animation-delay: 1.6s;
 }
 
-.entrée_plat_dessert p {
+.entree_plat_dessert p {
   text-align: center;
 }
 .entree_plat_dessert:hover {

@@ -1,34 +1,16 @@
 @media screen and (min-width: 992px) {
+  #boutton_fontionnement {
+    flex-direction: row;
+    gap: 20px;
+  }
 
-#boutton_fontionnement
-{
-flex-direction: row;
-gap: 20px;
+  article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cardrestaurant {
+    width: 45%;
+  }
 }
-
-.cards 
-{
- flex-direction: row;  
- flex-wrap: wrap;
- justify-content: space-between;
-}
-
-.cardrestaurant
-{
-   width: 45%;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

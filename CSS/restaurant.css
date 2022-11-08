@@ -1,20 +1,14 @@
-
-
 .header_logo_icone {
   display: flex;
-    justify-content: center;
-    margin-left: 70px;
-    width: 60%;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  width: auto;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.header_logo_icone i {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  width: 60%;
-  padding-top: 35px;
+.fa-arrow-left {
+  margin-left: 48px;
+  padding-top: 30px;
   padding-bottom: 10px;
   font-size: 20px;
   text-decoration: none;
@@ -22,13 +16,10 @@
 }
 
 .header_logo_icone img {
+  margin: auto;
+  width: 50%;
   display: flex;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: 155px;
-
-  width: 35%;
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -62,7 +53,7 @@ section h1 {
   justify-content: space-between;
 }
 
-.bloc_entrée_plat_dessert {
+.bloc_entree_plat_dessert {
   display: flex;
   flex-direction: column;
   margin-top: -50px;
@@ -168,15 +159,14 @@ h2 {
   font-weight: 100;
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
 }
 
 .plats__description {
   padding: 10px;
   margin: 0;
   width: 300px;
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
   transition: width 1s;
 }
 
@@ -240,5 +230,3 @@ button {
   background-color: #f2f2f2;
   background: linear-gradient(#ff79da, #9356dc);
 }
-
-

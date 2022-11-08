@@ -4,12 +4,12 @@ header {
   align-items: center;
 }
 
-.header_logo {
+.header_logo img {
   display: flex;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  width: 45%;
+  width: 50%;
   padding-top: 20px;
   padding-bottom: 10px;
 }
@@ -136,7 +136,7 @@ button {
   padding-bottom: 20px;
 }
 
-article {
+.bloc_entree_plat_dessert {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -157,7 +157,6 @@ article {
   cursor: pointer;
   box-shadow: 2px 2px 2px 2px #d9d9d9;
 }
-
 
 .imagerestaurant {
   position: relative;
